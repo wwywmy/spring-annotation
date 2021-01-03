@@ -9,7 +9,7 @@ import com.abc.sa.bean.Person;
 public class PersonConfig {
 
 	@Bean
-	public Person getBean() {
+	public Person getPerson() {
 		Person person = new Person("张三",30);
 		return person;
 	}

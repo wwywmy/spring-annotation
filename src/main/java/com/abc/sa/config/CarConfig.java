@@ -11,8 +11,11 @@ public class CarConfig {
 
 	@Scope("prototype")
 	@Bean(initMethod = "init", destroyMethod = "destroy")
+//	@Bean
 	public Car getCar() {
-		return new Car();
+		Car car = new Car();
+		car.setName("BMW");
+		return car;
 	}
 
 }

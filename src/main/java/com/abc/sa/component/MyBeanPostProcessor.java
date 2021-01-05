@@ -12,13 +12,13 @@ public class MyBeanPostProcessor implements BeanPostProcessor {
 
 	@Override
 	public Object postProcessBeforeInitialization(Object bean, String beanName) throws BeansException {
-		log.info("{} postProcessBeforeInitialization", beanName);
+//		log.info("{} postProcessBeforeInitialization", beanName);
 		return bean;
 	}
 
 	@Override
 	public Object postProcessAfterInitialization(Object bean, String beanName) throws BeansException {
-		log.info("{} postProcessAfterInitialization", beanName);
+//		log.info("{} postProcessAfterInitialization", beanName);
 		return bean;
 	}
 

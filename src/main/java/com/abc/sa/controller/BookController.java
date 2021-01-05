@@ -13,19 +13,21 @@ import com.abc.sa.util.SpringContextHolder;
 @RequestMapping("/book")
 public class BookController {
 	@Autowired
+//	@Resource
+//	@Inject
 	private BookService bookService;
-	
+
 	@RequestMapping("/list")
 	public Object list() {
-		
+
 		ApplicationContext applicationContext = SpringContextHolder.getApplicationContext();
 		BookService bks = applicationContext.getBean(BookService.class);
-		
+
 		return bks.getBookBySn("112233");
 	}
-	
+
 	@RequestMapping("/sn/{sn}")
 	public Object bySn(@PathVariable String sn) {
-		return  bookService.getBookBySn(sn);
+		return bookService.getBookBySn(sn);
 	}
 }

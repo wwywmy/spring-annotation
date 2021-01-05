@@ -1,2 +1,4 @@
 server:
   port: 13500
+
+spring:  profiles:    active:    - local

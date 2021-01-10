@@ -15,6 +15,11 @@ import org.springframework.stereotype.Component;
 import lombok.SneakyThrows;
 import lombok.extern.slf4j.Slf4j;
 
+/**
+ * @author Administrator
+ * EnableAspectJAutoProxy
+ *
+ */
 @Aspect
 @Component
 @Slf4j
